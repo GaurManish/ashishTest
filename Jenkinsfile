@@ -1,10 +1,5 @@
 pipeline {
 
-  environment {
-    registry = "localhost:5000/justme/myweb1"
-    dockerImage = ""
-  }
-
   agent any
 
   stages {
