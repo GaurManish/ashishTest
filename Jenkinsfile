@@ -36,7 +36,7 @@ pipeline {
     stage('Deploy The App') {
       steps {
         script {
-          kubernetes.deploy(configs: "client-cluster-ip-service.yaml")
+          kubernetesDeploy(configs: "client-cluster-ip-service.yaml", kubeconfigId: "mykubeconfig")
         }
       }
     }
