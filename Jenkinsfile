@@ -1,4 +1,4 @@
-ppipeline {
+pipeline {
 
   environment {
     registry = "localhost:5000/justme/myweb1"
